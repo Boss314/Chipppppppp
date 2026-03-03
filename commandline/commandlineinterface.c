@@ -43,15 +43,19 @@ int main(int argc, char **argv){
         return 3;
     }
 
+    if(stats.st_size > 3854){
+        printf("rom file %s is too big to fit in ram\n",argv[1]);
+        return 4;
+    }
+
     printf("reading %ld bytes from ROM file %s and loading them into RAM...\n",stats.st_size,argv[1]);
 
     uint8_t *rom_bytes=malloc(stats.st_size);
     
-
     if(read(fd,rom_bytes,stats.st_size)==-1){
-        printf("%s\n",strerror(errno));
-        printf("failed to read %ld bytes from %s with fd=%d\n",stats.st_size,argv[1],fd);
-        return 4;
+        puts(strerror(errno));
+        printf("\nfailed to read %ld bytes from %s with fd=%d\n",stats.st_size,argv[1],fd);
+        return 5;
     }
 
     for(int i=0;i<stats.st_size;i++){
