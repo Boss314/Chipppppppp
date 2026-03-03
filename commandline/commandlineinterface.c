@@ -21,6 +21,8 @@ extern bool DISPLAY[32][64];
 extern uint8_t RAM[4096];
 
 int main(int argc, char **argv){
+
+
     if(argc<2){
         printf("must include a rom file to load into memory\n");
         return 1;
@@ -114,6 +116,8 @@ int main(int argc, char **argv){
                 break;
                 case INVALID_SPRITE:
                     printf("ERROR: INVALID SPRITE\n\n");
+                break;
+                default:
                 break;
             }
         break;

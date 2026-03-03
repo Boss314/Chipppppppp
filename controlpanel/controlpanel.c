@@ -491,6 +491,8 @@ void draw_error_code(){
         case INVALID_SPRITE:
         sprintf(text,"ERROR: INVALID_SPRITE");
         break;
+        default:
+        break;
     }
 
 
