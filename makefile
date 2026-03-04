@@ -33,7 +33,9 @@ controls:
 	@echo "  MOUSE LEFT:  Execute 1 instruction"
 	@echo "  MOUSE RIGHT: Advance timers"
 	@echo "  KEYPAD +: 	  Increase emulator speed"
+	@echo "  UP ARROW:    Increase emulator speed"
 	@echo "  KEYPAD -: 	  Decrease emulator speed"
+	@echo "  DOWN ARROW:  Decrease emulator speed"
 help:
 	@echo "Available targets:"
 	@echo "  main      	  Build Chipppppppp with GUI"

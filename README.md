@@ -42,8 +42,8 @@ Chipppppppp also has other controls to manage program execution:
 - **Pause/unpause execution and timers**: Space
 - **Execute exactly 1 instruction**: Left Click while paused
 - **Decrease timer registers by 1**: Right Click while paused
-- **Increase emulator speed**: Keypad +
-- **Decrease emulator speed**: Keypad -
+- **Increase emulator speed**: Keypad + or Arrow UP
+- **Decrease emulator speed**: Keypad - or Arrow DOWN
 
 ### Memory Monitoring
 ![Chipppppppp's memory diagram](images/memorydiagram.png)

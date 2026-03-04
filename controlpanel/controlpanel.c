@@ -171,12 +171,12 @@ int main(int argc, char **argv){
         }
 
         // update instructions_per_second, 1 billion is an optimistic maximum
-        if(IsKeyPressed(KEY_KP_ADD) || IsKeyPressedRepeat(KEY_KP_ADD)){
+        if(IsKeyPressed(KEY_KP_ADD) || IsKeyPressedRepeat(KEY_KP_ADD) || IsKeyPressed(KEY_UP) || IsKeyPressedRepeat(KEY_UP)){
             instructions_per_second+=instructions_per_second/20;
             if(instructions_per_second>1000000000) instructions_per_second=1000000000;
         }
 
-        if(IsKeyPressed(KEY_KP_SUBTRACT) || IsKeyPressedRepeat(KEY_KP_SUBTRACT)){
+        if(IsKeyPressed(KEY_KP_SUBTRACT) || IsKeyPressedRepeat(KEY_KP_SUBTRACT) || IsKeyPressed(KEY_DOWN) || IsKeyPressedRepeat(KEY_DOWN)){
             instructions_per_second-=instructions_per_second/20;
             if(instructions_per_second<20) instructions_per_second=20;
         }
